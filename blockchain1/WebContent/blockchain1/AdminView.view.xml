@@ -1,0 +1,48 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="blockchain1.AdminView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Admininstrator View">
+		<content>
+	
+	<GenericTile id="TileCS" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create Student"
+		 press="pressCreateStudent">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://add-coursebook"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	<GenericTile id="TileCV" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create Visitor" press="pressCreateVisitor">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://personnel-view"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	<GenericTile id="TileUC" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Add University" press="pressUniversity">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://redo"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		</content>
+	</Page>
+</core:View>

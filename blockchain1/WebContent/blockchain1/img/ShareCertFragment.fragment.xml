@@ -1,0 +1,46 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified">
+	
+	 <Dialog title = "Share">
+    <l:Grid defaultSpan = "L12 M12 S12" width = "auto" id = "idGrid">
+    <l:content>
+        <f:SimpleForm id="SimpleFormDisplay354"
+            minWidth="1024"
+            maxContainerCols="2"
+            editable="false"
+            layout="ResponsiveGridLayout"
+            title="Share Certificate"
+            labelSpanL="3"
+            labelSpanM="3"
+            emptySpanL="4"
+            emptySpanM="4"
+            columnsL="2"
+            columnsM="2">
+            <f:content>
+                <Label text="Visitor" />
+                <Input id = "Visitor"/>
+             
+                <Label text="Phone" />
+                <Input id = "phone"/>
+             
+                <Label text="Expiry Date" />
+                <Input id = "expdate"/>
+             
+                
+            </f:content>
+        </f:SimpleForm>
+    </l:content>
+    </l:Grid>
+    <buttons>
+    <Button text = "CLOSE" press = "closeDialog" type = "Reject"/>
+    <Button text = "SHARE" press = "onSave" type = "Accept"/>
+    </buttons>
+    </Dialog>
+	
+	
+	
+	</core:FragmentDefinition>

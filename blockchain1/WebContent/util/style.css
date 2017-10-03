@@ -1,0 +1,45 @@
+.StyleBorder{
+
+  border-radius: 5px 5px 5px 5px!important;
+
+  -moz-border-radius: 5px 5px 5px 5px!important;
+
+  -webkit-border-radius: 5px 5px 5px 5px!important;
+
+  border: 5px solid #808080!important;
+
+    }
+    
+    
+.box {
+    display: inline-block;
+    transform:none;
+    height: @item-height - 2 *@margin;
+    width: @item-width - 2*@margin;
+    margin:@margin;
+    background-color:#92cdda;
+    border-radius: 5px 5px 5px 5px!important;
+
+  -moz-border-radius: 5px 5px 5px 5px!important;
+
+  -webkit-border-radius: 5px 5px 5px 5px!important;
+
+  border: 2px solid #808080!important;
+}
+.box1 {
+	transform:none;
+    align: Center;
+    height: @item-height - 2 *@margin;
+    width: @item-width - 2*@margin;
+    margin:@margin;
+    background-color:#92cdda;
+    border-radius: 5px 5px 5px 5px!important;
+
+  -moz-border-radius: 5px 5px 5px 5px!important;
+
+  -webkit-border-radius: 5px 5px 5px 5px!important;
+
+  border: 2px solid #808080!important;
+} 
+
+   

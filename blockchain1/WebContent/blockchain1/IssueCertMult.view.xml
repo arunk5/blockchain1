@@ -1,0 +1,41 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+	xmlns:u="sap.ui.unified"
+	class="viewPadding"
+		controllerName="blockchain1.IssueCertMult" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Issue Multiple Certificate" showNavButton="true" navButtonPress="BackButtonPress">
+		<l:VerticalLayout>
+		<u:FileUploader
+			id="fileUploader"
+			name="myFileUpload"
+			uploadUrl="upload/"
+			width="400px"
+			tooltip="Upload your file to the local server"
+			uploadComplete="handleUploadComplete"
+			change="handleValueChange"
+			typeMissmatch="handleTypeMissmatch"
+			style="Emphasized"
+			fileType="txt,jpg"
+			placeholder="Choose certificates for Issuing...">
+				<u:parameters>
+					<u:FileUploaderParameter
+						name="param1"
+						value="Foo"/>
+					<u:FileUploaderParameter
+						name="param2"
+						value="bar"/>
+				</u:parameters>
+				<u:headerParameters>
+					<u:FileUploaderParameter
+						name="headerParam1"
+						value="Foo"/>
+					<u:FileUploaderParameter
+						name="headerParam2"
+						value="bar"/>
+				</u:headerParameters>
+			</u:FileUploader>
+		<Button
+			text="Issue Certificate"
+			press="handleUploadPress"/>
+	</l:VerticalLayout>
+	</Page>
+</core:View>

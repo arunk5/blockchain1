@@ -1,0 +1,169 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:l="sap.ui.layout" xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	xmlns="sap.m"  controllerName="blockchain1.StudentHome"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Student Certificates" showNavButton="true" navButtonPress="BackButtonPress" >
+		<content>
+			<!-- <TileContainer id="container" height="400px" tileDelete="handleTileDelete"> 
+				<tiles> <CustomTile id="ct1" borderVisible="true"> <content> <VBox> <Toolbar 
+				class="backcolor" design="Transparent"> <Text class="sapMHeader" text="Certificate" 
+				/> </Toolbar> <Button text="View" press="onViewCert" height="10px"/> <Button 
+				text="Share" press="onShareCert" height="10px"/> </VBox> </content> </CustomTile> 
+				</tiles> </TileContainer> -->
+			<!-- <GenericTile id="ct1" class="sapUiTinyMarginBegin sapUiTinyMarginTop 
+				tileLayout" header="Certificate 1" subheader="Semester 1" press="press" height="800px" 
+				width="500px"> <tileContent> <TileContent> <content> <HBox> <items> <Button 
+				text="View" press="onViewCert" height="10px"/> <Button text="Share" press="onShareCert" 
+				height="10px"/> </items> </HBox> </content> </TileContent> </tileContent> 
+				</GenericTile> -->
+				
+			<!-- <TileContainer id="container" height="300px"
+				tileDelete="handleTileDelete">
+				<tiles>
+					<CustomTile id="ct1" borderVisible="true" class="box">
+
+						<content>
+
+							<VBox>
+
+								<l:VerticalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+										<Text text="Certificate 1" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+
+									</l:HorizontalLayout>
+										<Text text="Semester 1" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+									<l:HorizontalLayout class="sapUiTinyMargin">
+
+										<Button text="View" press="onViewCert" />
+										<Label size="100px" text=""/>
+										<Button text="Share" press="onShareCert" />
+
+
+
+									</l:HorizontalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+
+
+									</l:HorizontalLayout>
+
+								</l:VerticalLayout>
+
+							</VBox>
+
+						</content>
+
+					</CustomTile>
+					<CustomTile id="ct2" borderVisible="true" class="box1" style="transform:none">
+
+						<content>
+
+							<VBox>
+
+								<l:VerticalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+										<Text text="Certificate 2" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+
+									</l:HorizontalLayout>
+										<Text text="Semester 2" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+									<l:HorizontalLayout class="sapUiTinyMargin">
+
+
+										<Button text="View" press="onViewCert" />
+										<Button text="Share" press="onShareCert" />
+
+
+
+									</l:HorizontalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+
+
+									</l:HorizontalLayout>
+
+								</l:VerticalLayout>
+
+							</VBox>
+
+						</content>
+
+					</CustomTile>
+				</tiles>
+			</TileContainer>
+ -->	
+ 
+                             <VBox id="V1"	items="{custom>/}">
+                                    
+                                    <items>
+                                  
+                                <NotificationListItem          
+                                id="nl1"
+								title="Engineering Certificate "
+								description="{custom>certificateId}"
+								showCloseButton="true"
+								datetime="90 days ago"
+								unread="true"
+								priority="High"
+								close="onItemClose"
+								press="onListItemPress">
+							<buttons>
+								<Button text="View" type="Accept" app:myData="{custom>certificateId}" press="onAcceptPress1"/>
+								<Button text="Share" type="Reject" press="onShare"/>
+							</buttons>
+						</NotificationListItem>	                                          
+                                    
+                                    </items>         
+                                    
+                                    
+                                    </VBox>
+ 
+ 
+ 
+ 
+ 
+<!-- <NotificationListItem          
+                                id="nl1"
+								title="Engineering Certificate "
+								description="C7"
+								showCloseButton="true"
+								datetime="90 days ago"
+								unread="true"
+								priority="High"
+								close="onItemClose"
+								press="onListItemPress">
+							<buttons>
+								<Button text="View - C7" type="Accept" press="onAcceptPress1"/>
+								<Button text="Share" type="Reject" press="onShare"/>
+							</buttons>
+						</NotificationListItem>	
+				 	  	<NotificationListItem
+						        id="nl2"
+								title="MBA Certificate"
+								description="C4"
+								showCloseButton="true"
+								datetime="3 days"
+								unread="true"
+								priority="High"
+								close="onItemClose"
+								press="onListItemPress">
+							<buttons>
+								<Button text="View - C4" type="Accept" press="onAcceptPress2"/>
+								<Button text="Share" type="Reject" press="onShare"/>
+							</buttons>
+						</NotificationListItem>	 -->
+ </content>
+	</Page>
+</core:View>

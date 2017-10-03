@@ -1,0 +1,37 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="blockchain1.Issuer" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Issuer" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+	<GenericTile id="Tile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Issue Certificate"
+		 press="pressIssue">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://add-coursebook"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	<GenericTile id="Tile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="View Certificate" press="pressView">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://personnel-view"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	<GenericTile id="Tile3" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Revoke Certificate" press="pressRevoke">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://redo"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+		</content>
+	</Page>
+</core:View>

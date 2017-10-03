@@ -1,0 +1,63 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:l="sap.ui.layout" controllerName="blockchain1.StudentHomePage"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Student - Home">
+		<content>
+			<IconTabBar id="idIconTabBarNoIcons" expanded="{device>/isNoPhone}"
+				class="sapUiResponsiveContentPadding">
+				<items>
+					<IconTabFilter text="My Certificates">
+<TileContainer id="container" height="300px"
+				tileDelete="handleTileDelete">
+				<tiles>
+					<CustomTile id="ct1" borderVisible="true" class="box">
+
+						<content>
+
+							<VBox>
+
+								<l:VerticalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+									<Text text="Certificate 1" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+
+									</l:HorizontalLayout>
+										<Text text="Semester 1" class="sapUiTinyMargin sapUiMediumMarginBottom"></Text>
+									<l:HorizontalLayout class="sapUiTinyMargin">
+
+										<Button text="View" press="onViewCert" />
+										<Label size="10px"> </Label>
+										<Button text="Share" press="onShareCert" />
+
+
+
+									</l:HorizontalLayout>
+
+
+
+									<l:HorizontalLayout>
+
+
+
+									</l:HorizontalLayout>
+
+								</l:VerticalLayout>
+
+							</VBox>
+
+						</content>
+
+					</CustomTile>
+					</tiles>
+					
+					</TileContainer>
+					
+					</IconTabFilter>
+				</items>
+			</IconTabBar>
+		</content>
+	</Page>
+</core:View>

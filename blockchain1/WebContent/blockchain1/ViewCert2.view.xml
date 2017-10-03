@@ -1,0 +1,27 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="blockchain1.ViewCert2" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Year Of Study" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+	<GenericTile id="Tile1" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header=" 2014-2016 "
+		 press="pressFirst">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://course-book"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+	
+	<GenericTile id="Tile2" class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header=" 2015-2017 " press="pressSecond">
+		<tileContent>
+			<TileContent>
+				<content>
+					<ImageContent src="sap-icon://course-book"></ImageContent>
+				</content>
+			</TileContent>
+		</tileContent>
+	</GenericTile>
+		</content>
+	</Page>
+</core:View>

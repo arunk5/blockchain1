@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		controllerName="blockchain1.VisitorCertView" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Visitor View">
+		<content>
+	<NotificationListItem          
+                                id="nl1"
+								title="Engineering Certificate "
+								description="C7"
+								showCloseButton="true"
+								datetime="90 days ago"
+								unread="true"
+								priority="High"
+								close="onItemClose"
+								press="onListItemPress">
+							<buttons>
+								<Button text="View" type="Accept" press="onAcceptPress1"/>
+								
+							</buttons>
+						</NotificationListItem>	
+		
+		</content>
+	</Page>
+</core:View>

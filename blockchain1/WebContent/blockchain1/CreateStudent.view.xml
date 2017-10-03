@@ -1,0 +1,16 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="blockchain1.CreateStudent" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Student Creation" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+	
+	<l:VerticalLayout width="50%">
+				<Label text="StudentID" required="true" labelFor="SelectId" design="Bold" class="sapUiSmallMargin" />
+
+								<Input id="SelectId" width="30%" class="sapUiSmallMargin" />
+							    <Button text=" Create Student " class="sapUiSmallMargin"  press = "CreateStudent"/>
+				</l:VerticalLayout>
+	
+	
+		</content>
+	</Page>
+</core:View>

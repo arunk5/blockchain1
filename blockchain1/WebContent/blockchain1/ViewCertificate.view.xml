@@ -1,0 +1,92 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:f="sap.ui.layout.form" xmlns:l="sap.ui.layout"
+		controllerName="blockchain1.ViewCertificate" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="View Certificate" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+		
+			<VBox class="sapUiSmallMargin">
+		<f:SimpleForm id="SimpleFormToolbar1"
+			editable="true"
+			layout="ResponsiveGridLayout"
+			labelSpanXL="4"
+			labelSpanL="3"
+			labelSpanM="4"
+			labelSpanS="12"
+			adjustLabelSpan="false"
+			emptySpanXL="0"
+			emptySpanL="4"
+			emptySpanM="0"
+			emptySpanS="0"
+			columnsXL="2"
+			columnsL="1"
+			columnsM="1"
+			singleContainerFullSize="false" >
+			<f:toolbar>
+				<Toolbar id="TB1">
+					<Title text="Semester - Certificate" level="H4" titleStyle="H4"/>
+					<ToolbarSpacer />
+					
+				</Toolbar>
+			</f:toolbar>
+			<f:content>
+							
+				
+				<FlexBox
+					alignItems="Center" justifyContent="Center"
+					>
+					<items>
+						
+				<Label text="Student Number / Certificate Number" labelFor="input-c2" class="sapUiSmallMargin"/>
+			    <Input id="input-c2" required="true"/>
+			    <Button id="bId1" text="Search" press="OnSearch"/>
+					</items>
+				</FlexBox>
+				
+				
+							    
+				<Label text="University Name" labelFor="input-a"/>
+			    <Input id="input-a" required="true" enabled="false" editable="false" value="UPES"/>
+			   
+			    <Label text="Student Name" labelFor="input-b9"/>
+			    <Input id="input-b9" enabled="false" required="true"/>
+			    
+			    <Label text="Course" labelFor="input-d1"/>
+			    <Input id="input-d1" enabled="false" required="true"/>
+			    
+			    <Label text="Specialization" labelFor="input-e1"/>
+			    <Input id="input-e1" enabled="false" required="true"/>
+			    
+			    <Label text="Degree" labelFor="input-f1"/>
+			    <Input id="input-f1" enabled="false" required="true"/>
+			    
+			    <Label text="Issue Date" labelFor="input-g1"/>
+			    <Input id="input-g1" enabled="false" required="true"/>
+			    
+			    <Label text="Status" labelFor="input-sd1"/>
+			    <Input id="input-sd1" enabled="false" required="true"/>
+			    
+			    <Label text="Revoke Date" labelFor="input-rv1"/>
+			    <Input id="input-rv1" enabled="false" required="true"/>
+			    
+			    <Label text="Expiry Date" labelFor="input-exp1"/>
+			    <Input id="input-exp1"  enabled="false" required="true"/>
+			    
+			    <Label text="Signed By" labelFor="input-h1"/>
+			    <Input id="input-h1" enabled="false" required="true"/>
+			    
+			    <Label text="Grade" labelFor="input-i1"/>
+			    <Input id="input-i1" enabled="false" required="true"/>
+			    
+			    <Label text="Internal Number" labelFor="input-j1"/>
+			    <Input id="input-j1" enabled="false" required="true"/>  
+			</f:content>
+		</f:SimpleForm>
+	</VBox>
+		
+		
+		
+		
+		
+	
+		</content>
+	</Page>
+</core:View>

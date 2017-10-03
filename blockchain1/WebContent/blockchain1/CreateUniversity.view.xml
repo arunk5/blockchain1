@@ -1,0 +1,15 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:l="sap.ui.layout"
+		controllerName="blockchain1.CreateUniversity" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="University Addition" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+	
+	<l:VerticalLayout width="50%">
+				<Label text="Enter UniversityID" labelFor="SelectId1" design="Bold" class="sapUiSmallMargin" />
+
+								<Input id="SelectId1" width="30%" class="sapUiSmallMargin"/>
+							    <Button text=" Add University " class="sapUiSmallMargin" press = "CreateUniversity"/>
+				</l:VerticalLayout>
+		
+		</content>
+	</Page>
+</core:View>

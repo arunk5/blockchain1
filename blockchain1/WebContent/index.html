@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta http-equiv='Content-Type' content='text/html;charset=UTF-8'/>
+	  <link rel="stylesheet" type="text/css" href="util/style.css"/>
+		<script src="resources/sap-ui-core.js"
+				id="sap-ui-bootstrap"
+				data-sap-ui-libs="sap.m"
+				data-sap-ui-theme="sap_bluecrystal"
+				data-sap-ui-xx-bindingSyntax="complex"
+				
+				data-sap-ui-resourceroots='{"blockchain1": "blockchain1"}'>
+		</script>
+		<!-- only load the mobile lib "sap.m" and the "sap_bluecrystal" theme -->
+ 
+		<script>
+				//sap.ui.localResources("blockchain1");
+				var app = new sap.m.App({initialPage:"idlogin1"});
+				var page = sap.ui.view({id:"idlogin1", viewName:"blockchain1.login", type:sap.ui.core.mvc.ViewType.XML});
+				var stupage = sap.ui.view({id:"idlogin2", viewName:"blockchain1.StudentHome", type:sap.ui.core.mvc.ViewType.XML});
+				var CertPage = sap.ui.view({id:"idlogin3", viewName:"blockchain1.Certificate", type:sap.ui.core.mvc.ViewType.XML});
+				var IssuerPage = sap.ui.view({id:"idlogin4", viewName:"blockchain1.Issuer", type:sap.ui.core.mvc.ViewType.XML});
+				var IssuerCert = sap.ui.view({id:"idlogin5", viewName:"blockchain1.IssueCert", type:sap.ui.core.mvc.ViewType.XML});
+				var ViewCert1 = sap.ui.view({id:"ViewCert1", viewName:"blockchain1.ViewCert1", type:sap.ui.core.mvc.ViewType.XML});
+				var ViewCert2 = sap.ui.view({id:"ViewCert2", viewName:"blockchain1.ViewCert2", type:sap.ui.core.mvc.ViewType.XML});
+				var ViewCert3 = sap.ui.view({id:"ViewCert3", viewName:"blockchain1.ViewCert3", type:sap.ui.core.mvc.ViewType.XML});
+				var ViewCert4 = sap.ui.view({id:"ViewCert4", viewName:"blockchain1.ViewCert4", type:sap.ui.core.mvc.ViewType.XML});
+				var RevokeCert1 = sap.ui.view({id:"RevokeCert1", viewName:"blockchain1.RevokeCert1", type:sap.ui.core.mvc.ViewType.XML});
+				var RevokeCert2 = sap.ui.view({id:"RevokeCert2", viewName:"blockchain1.RevokeCert2", type:sap.ui.core.mvc.ViewType.XML});
+				var RevokeCert3 = sap.ui.view({id:"RevokeCert3", viewName:"blockchain1.RevokeCert3", type:sap.ui.core.mvc.ViewType.XML});
+				var RevokeCert4 = sap.ui.view({id:"RevokeCert4", viewName:"blockchain1.RevokeCert4", type:sap.ui.core.mvc.ViewType.XML});
+				var IssueCertSing = sap.ui.view({id:"IssueCertSing", viewName:"blockchain1.IssueCertSing", type:sap.ui.core.mvc.ViewType.XML});
+				var IssueCertMult = sap.ui.view({id:"IssueCertMult", viewName:"blockchain1.IssueCertMult", type:sap.ui.core.mvc.ViewType.XML});
+				var ViewCertificate = sap.ui.view({id:"ViewCertificate", viewName:"blockchain1.ViewCertificate", type:sap.ui.core.mvc.ViewType.XML});
+				var RevokeCertificate = sap.ui.view({id:"RevokeCertificate", viewName:"blockchain1.RevokeCertificate", type:sap.ui.core.mvc.ViewType.XML});
+				var AdminView = sap.ui.view({id:"AdminView", viewName:"blockchain1.AdminView", type:sap.ui.core.mvc.ViewType.XML});
+				var CreateStudent = sap.ui.view({id:"CreateStudent", viewName:"blockchain1.CreateStudent", type:sap.ui.core.mvc.ViewType.XML});
+				var CreateVisitor = sap.ui.view({id:"CreateVisitor", viewName:"blockchain1.CreateVisitor", type:sap.ui.core.mvc.ViewType.XML});
+				var CreateUniversity = sap.ui.view({id:"CreateUniversity", viewName:"blockchain1.CreateUniversity", type:sap.ui.core.mvc.ViewType.XML});
+				var VisitorCertView = sap.ui.view({id:"VisitorCertView", viewName:"blockchain1.VisitorCertView", type:sap.ui.core.mvc.ViewType.XML});
+				var VisitorCertificateView = sap.ui.view({id:"VisitorCertificateView", viewName:"blockchain1.VisitorCertificateView", type:sap.ui.core.mvc.ViewType.XML});
+				app.addPage(page);
+				app.addPage(VisitorCertView);
+				app.addPage(VisitorCertificateView);
+				app.addPage(ViewCertificate);
+				app.addPage(RevokeCertificate);
+				app.addPage(AdminView);
+				app.addPage(CreateStudent);
+				app.addPage(CreateVisitor);
+				app.addPage(CreateUniversity);
+								
+				app.addPage(stupage);
+				app.addPage(CertPage);
+				app.addPage(IssuerPage);
+				app.addPage(IssuerCert);
+				app.addPage(ViewCert1);
+				app.addPage(ViewCert2);
+				app.addPage(ViewCert3);
+				app.addPage(ViewCert4);
+				app.addPage(RevokeCert1);
+				app.addPage(RevokeCert2);
+				app.addPage(RevokeCert3);
+				app.addPage(RevokeCert4);
+				app.addPage(IssueCertSing);
+				app.addPage(IssueCertMult);
+				app.placeAt("content");
+		</script>
+
+	</head>
+	<body class="sapUiBody" role="application">
+		<div id="content"></div>
+		 
+	</body>
+</html>

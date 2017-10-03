@@ -1,0 +1,48 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" 
+	
+	xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form"
+	xmlns:u="sap.ui.unified"
+		controllerName="blockchain1.ViewCert4" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Issue Certificate" showNavButton="true" navButtonPress="BackButtonPress">
+		<content>
+	<VBox>
+	<HBox>
+	<Input  placeholder="Certificate 1" id="input-a" required="true" />
+	
+    <Button text = "View" press = "PressView" type = "Accept"/>
+    <Button text = "issue" press = "PressReissue" type = "Reject"/>
+    
+	</HBox>
+	<HBox>
+	<Input  placeholder="Certificate 2" id="input-b" required="true" />
+	
+    <Button text = "View" press = "PressView" type = "Accept"/>
+    <Button text = "issue" press = "PressReissue" type = "Reject"/>
+    
+	</HBox>
+	<HBox>
+	<Input  placeholder="Certificate 3" id="input-c" required="true" />
+	
+    <Button text = "View" press = "PressView" type = "Accept"/>
+    <Button text = "issue" press = "PressReissue" type = "Reject"/>
+    
+	</HBox>
+	<HBox>
+	<Input  placeholder="Certificate 4" id="input-d" required="true" />
+	
+    <Button text = "View" press = "PressView" type = "Accept"/>
+    <Button text = "issue" press = "PressReissue" type = "Reject"/>
+    
+	</HBox>
+	<HBox>
+	<Input  placeholder="Certificate 5" id="input-e" required="true" />
+	
+    <Button text = "View" press = "PressView" type = "Accept"/>
+    <Button text = "issue" press = "PressReissue" type = "Reject"/>
+    
+	</HBox>
+	</VBox>
+		</content>
+	</Page>
+</core:View>

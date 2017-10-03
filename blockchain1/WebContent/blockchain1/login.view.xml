@@ -1,0 +1,22 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" controllerName="blockchain1.login" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Academic Wallet" design="Bold">
+		<content>
+			<FlexBox height="100px" alignItems="Start" justifyContent="Center">
+				<items>
+					<VBox>
+						<Image
+							src="http://www.stravissolutions.com/images/style1/logo.png"
+							float="Right" />
+							<HBox>
+						<Button icon="sap-icon://account"/>	
+						<Input  placeholder="Enter UserName" id="input-a" required="true" />
+						</HBox>
+						<Input id="passwordInput" type="Password" placeholder="Enter password ..." />
+						<Button text="Login" align="Center"  press="onLogin"/>
+					</VBox>
+				</items>
+			</FlexBox>
+		</content>
+	</Page>
+</core:View>
